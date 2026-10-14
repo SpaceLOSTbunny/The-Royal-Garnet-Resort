@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta name="description"
+    content="Contact The Royal Garnet and send a stay enquiry using the reservation enquiry form.">
+  <title>Contact Us | The Royal Garnet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/logo/rg-monogram.svg" type="image/svg+xml">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+
+  <script src="js/main.js" defer></script>
+  <script src="js/reservations.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="announcement-bar">
+    <span>A new expression of understated luxury</span>
+    <span class="announcement-dot" aria-hidden="true"></span>
+    <span>Thoughtfully yours, always</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell container">
+      <a class="brand" href="index.html" aria-label="The Royal Garnet home">
+        <img class="brand-mark" src="assets/logo/rg-monogram.svg" alt="" width="48" height="48">
+        <span class="brand-copy">
+          <span class="brand-name">THE ROYAL GARNET</span>
+          <span class="brand-caption">A REFINED EXPRESSION OF LUXURY</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" aria-current="page">Contact Us</a>
+        <a class="nav-cta" href="contact.html#reservation-form">Make an enquiry <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> WE'RE HERE TO HELP</p>
+          <h1 class="page-title" id="page-title">Let's make it<br><em>personal.</em></h1>
+        </div>
+        <p class="lead">Tell us a little about the stay you have in mind. Send an enquiry and the team can follow up
+          with the details you need.</p>
+      </div>
+    </section>
+
+    <section class="section-padding" aria-labelledby="contact-form-title">
+      <div class="contact-layout container">
+        <div class="contact-intro reveal" id="contact-details">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A NOTE, A QUESTION, A PLAN</p>
+          <h2 id="contact-form-title">Every great stay<br>starts <em>somewhere.</em></h2>
+          <p>Whether you are planning a quiet escape, asking about a room or arranging a special occasion, use the form
+            to tell us what you need.</p>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon" aria-hidden="true">@</span>
+            <div>
+              <strong>Email the team</strong>
+              <span><a href="mailto:stay@theroyalgarnet.example">theroyalgarnet@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon" aria-hidden="true">↗</span>
+            <div>
+              <strong>Reservation enquiries</strong>
+              <span>Share your dates and preferences using the form. The form sends an enquiry, not a confirmed
+                booking.</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon" aria-hidden="true">⌖</span>
+            <div>
+              <strong>Property location</strong>
+              <span><a href="https://www.google.com/maps?hl=en-IN&gl=IN&um=1&ie=UTF-8&fb=1&sa=X&geocode=KUEWVeNWOUQ3MVq7x6y4JDdb&daddr=Hotel+GARNET,+Kaziranga.,+NH+37,+KAZIRANGA,+Geleki,+KAZIRANGA,+Assam+785609" target="_blank">Check Location in Map</a></span>
+            </div>
+          </div>
+        </div>
+
+        
+        <form class="reservation-form reveal reveal-delay-1" id="reservation-form">
+          <div class="form-heading">
+            <span>Stay enquiry form</span>
+            <span class="form-required"><span class="required-mark">*</span> Required fields</span>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="guest-name">Full name <span class="required-mark">*</span></label>
+              <input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Your name" required
+                minlength="2" maxlength="100">
+            </div>
+
+            <div class="form-field">
+              <label for="guest-email">Email address <span class="required-mark">*</span></label>
+              <input id="guest-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                required maxlength="160">
+            </div>
+
+            <div class="form-field">
+              <label for="guest-phone">Phone number <span class="required-mark">*</span></label>
+              <input id="guest-phone" name="phone" type="tel" autocomplete="tel" placeholder="Include country code"
+                required minlength="7" maxlength="30">
+            </div>
+
+            <div class="form-field">
+              <label for="guest-count">Number of guests <span class="required-mark">*</span></label>
+              <select id="guest-count" name="guests" required>
+                <option value="" selected disabled>Select guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5+">5 or more guests</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="check-in">Check-in date <span class="required-mark">*</span></label>
+              <input id="check-in" name="checkIn" type="date" required>
+            </div>
+
+            <div class="form-field">
+              <label for="check-out">Check-out date <span class="required-mark">*</span></label>
+              <input id="check-out" name="checkOut" type="date" required>
+            </div>
+
+            <div class="form-field">
+              <label for="room-type">Preferred accommodation</label>
+              <select id="room-type" name="roomType">
+                <option value="Not decided">Not decided yet</option>
+                <option value="Garnet Room">Garnet Room</option>
+                <option value="Royal Suite">Royal Suite</option>
+                <option value="Other / please advise">Other / please advise</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="occasion">Occasion <span class="optional-label">OPTIONAL</span></label>
+              <select id="occasion" name="occasion">
+                <option value="Not specified">Not specified</option>
+                <option value="Leisure break">Leisure break</option>
+                <option value="Celebration">Celebration</option>
+                <option value="Business trip">Business trip</option>
+                <option value="Family stay">Family stay</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field-full">
+              <label for="guest-message">Anything else we should know? <span
+                  class="optional-label">OPTIONAL</span></label>
+              <textarea id="guest-message" name="message" rows="4" maxlength="1500"
+                placeholder="Share preferences, questions or special requests."></textarea>
+            </div>
+
+          
+            <div class="honeypot" aria-hidden="true">
+              <label for="website-field">Leave this field empty</label>
+              <input id="website-field" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <p>Submitting this form sends an enquiry for follow-up. Your stay is not confirmed until the hotel team
+              replies.</p>
+            <button class="button button-dark form-submit" type="submit">Send enquiry <span
+                aria-hidden="true">↗</span></button>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="cta-strip-inner container">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> A MORE CONSIDERED STAY</p>
+          <h2>We look forward to hearing from you.</h2>
+          <p>We will use your enquiry details to respond to your request.</p>
+        </div>
+        <a class="button button-outline" href="services.html">Explore our services <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main container">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="The Royal Garnet home">
+          <img class="brand-mark" src="assets/logo/rg-monogram.svg" alt="" width="48" height="48" loading="lazy">
+          <span class="brand-copy">
+            <span class="brand-name">THE ROYAL GARNET</span>
+            <span class="brand-caption">A REFINED EXPRESSION OF LUXURY</span>
+          </span>
+        </a>
+        <p class="footer-manifesto">Stay exquisite.<br>Live royally.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Explore</h2>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog & stories</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Reservations</h2>
+        <a href="contact.html#reservation-form">Send an enquiry ↗</a>
+        <a href="contact.html#contact-details">Contact details</a>
+        <p>Personal by nature.<br>Exceptional by design.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <span>© <span data-current-year></span><span>  CREATED WITH INTENTION.</span>
+      
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+
+</html>
